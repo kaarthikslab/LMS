@@ -7,7 +7,7 @@ const RestockedDetails = () => {
   const book = mockBooks.find(b => b.id === parseInt(id));
 
   return (
-    <div className="glass" style={{ padding: '20px', marginTop: '100px' }}> {/* 5-line gap below header */}
+    <div className="page-bg glass" style={{ padding: '20px', marginTop: '80px', maxWidth: '600px', margin: '80px auto' }}>
       <h2>Restock Logs for {book.name}</h2>
       {book.restocked.map((log, idx) => (
         <div key={idx} className="glass" style={{ margin: '10px 0', padding: '10px' }}>
