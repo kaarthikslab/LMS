@@ -1,6 +1,6 @@
 import React from 'react';
 import BookTile from '../components/BookTile';
-import { mockBooks } from '../data/mockData';
+import { mockBooks } from '../data/mockdata';
 
 const LiveSection = () => (
   <div className="grid">
