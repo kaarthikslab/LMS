@@ -1,21 +1,26 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  color: #E8E8E8; /* Soft gray-white text for readability */
-  background: #2C2C2C; /* Solid, uniform dark professional color */
+  
+  /* 1. Base Color Change: Dark Teal (#004D40) for a uniform, non-gradient background */
+  background-color: #004D40; 
+  
+  /* Text Color: Adjusted for better contrast on Dark Teal */
+  color: #E8E8E8; 
+  
   min-height: 100vh;
 }
 
-/* Homepage: Simplified without gradients or images */
+/* Homepage & Content Pages: Ensure they inherit the uniform body color */
 .homepage-bg {
   /* No background-image or gradient; inherits from body */
 }
 
-/* Content Pages: Simplified without gradients or images */
 .page-bg {
   /* No background-image or gradient; inherits from body */
 }
 
+/* Glass effect remains neutral for visibility */
 .glass {
   background: rgba(255, 255, 255, 0.1); /* Neutral glassy background */
   backdrop-filter: blur(15px);
@@ -23,18 +28,22 @@ body {
   border-radius: 10px;
 }
 
+/* 2. Button Color Change: Use Electric Magenta (#FF007F) as the accent */
 .neu-button {
-  background: rgba(255, 153, 51, 0.8);
+  /* Using Electric Magenta as the primary button color */
+  background: rgba(255, 0, 127, 0.8); 
   border: none;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.1);
+  /* Shadow adjusted slightly darker to contrast with Dark Teal */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   color: #E8E8E8;
 }
 
 .neu-button:hover {
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
-  background: rgba(255, 153, 51, 1);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+  /* Full opacity on hover */
+  background: #FF007F; 
 }
 
 .grid {
@@ -56,9 +65,21 @@ body {
 
 .square-tile:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 10px #FF9933;
+  /* Tile hover shadow uses Electric Magenta */
+  box-shadow: 0 0 10px #FF007F; 
 }
 
-.primary { color: #2C2C2C; }
-.accent { color: #FF9933; }
-.title-font { font-family: 'Noto Sans Devanagari', sans-serif; color: #FFD700; }
+/* 3. Utility Class Color Changes */
+/* primary should be a dark color, but we'll use a slightly lighter teal for contrast on a dark background */
+.primary { 
+  color: #004D40; /* Changed to the Dark Teal base color for true "primary" status */
+} 
+/* accent is now Electric Magenta */
+.accent { 
+  color: #FF007F; 
+} 
+/* title-font is changed to a high-contrast color that works with the palette */
+.title-font { 
+  font-family: 'Noto Sans Devanagari', sans-serif; 
+  color: #64FFDA; /* A bright, high-contrast light teal/cyan that complements the dark teal */
+}
