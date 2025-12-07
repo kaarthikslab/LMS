@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => (
-  <nav className="glass" style={{ width: '200px', height: '100vh', padding: '20px', position: 'fixed' }}>
+  <nav className="glass" style={{ width: '200px', height: '100vh', padding: '20px', position: 'fixed', left: 0, top: 0 }}>
     <ul style={{ listStyle: 'none', padding: 0 }}>
-      <li><Link to="/" className="primary">Dashboard</Link></li>
+      <li><Link to="/" className="accent">Dashboard</Link></li>
       <li><Link to="/live">Live Section</Link></li>
       <li><Link to="/issued">Issued Section</Link></li>
       <li><Link to="/restocked">Restocked Section</Link></li>
