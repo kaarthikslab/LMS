@@ -14,10 +14,10 @@ import './styles.css';
 function App() {
   return (
     <Router>
-      <div className="homepage-bg"> {/* Homepage theme applied globally for simplicity; override in pages if needed */}
+      <div className="homepage-bg">
         <Navigation />
         <Header />
-        <div style={{ marginLeft: '220px', padding: '20px' }}> {/* Offset for side nav */}
+        <div style={{ marginLeft: '220px', padding: '20px' }}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/live" element={<LiveSection />} />
