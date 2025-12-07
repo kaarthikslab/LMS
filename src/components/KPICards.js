@@ -1,5 +1,5 @@
 import React from 'react';
-import { kpis } from '../data/mockData';
+import { kpis } from '../data/mockdata';
 
 const KPICards = () => (
   <div style={{ display: 'flex', justifyContent: 'space-around', margin: '20px 0' }}>
