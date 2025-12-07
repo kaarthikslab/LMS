@@ -1,13 +1,26 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  color: white; /* White text for high contrast on dark background */
+  color: #E8E8E8; /* Softer white-gray text to reduce dominance */
 }
 
-/* Uniform Dark, Grounded Base for All Pages (Terracotta & Rust Theme) */
+/* Uniform Dark, Grounded Base with Subtle Tint for All Pages (Terracotta & Rust Theme) */
 .homepage-bg, .page-bg {
-  background: #4E342E; /* Muted Rust Brown - Dark, grounded base for stability and tradition */
+  background: #4E342E; /* Muted Rust Brown - Dark, grounded base */
   min-height: 100vh;
+  /* Subtle Neutral Tint Overlay for Balance (Very Light, Non-Dominant) */
+  position: relative;
+}
+
+.homepage-bg::before, .page-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(78, 52, 46, 0.05); /* Very faint rust tint for softening */
+  pointer-events: none;
 }
 
 /* Homepage: Ultra-Subtle Patterns with Light Peach Accents (Extremely Faint) */
@@ -38,7 +51,7 @@ body {
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(78, 52, 46, 0.15); /* Tinted rust instead of pure white for less dominance */
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -50,7 +63,7 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  color: white;
+  color: #E8E8E8; /* Softer text color */
 }
 
 .neu-button:hover {
