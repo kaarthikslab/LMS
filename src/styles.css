@@ -1,43 +1,40 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  color: white; /* White text for contrast on dark background */
+  color: white; /* White text for high contrast on dark background */
 }
 
-/* Uniform Dark, Vibrant Base for All Pages */
+/* Uniform Dark, Grounded Base for All Pages */
 .homepage-bg, .page-bg {
-  background: #2C2C2C; /* Deep Charcoal Gray - Moderate Dark, Uniform for legibility */
+  background: #1a1a1a; /* Deeper Charcoal Gray - Darker, more grounded for stability */
   min-height: 100vh;
 }
 
-/* Homepage: Subtle Hindu Traditional Patterns with Vibrant Accents (Complete, Faint) */
+/* Homepage: Ultra-Subtle Hindu Traditional Patterns (Complete, Extremely Faint) */
 .homepage-bg {
   background-image: 
-    /* Faint Mandala with Vibrant Saffron/Teal */
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23FF9933" stroke-width="0.5" opacity="0.08"/><path d="M100 20 L110 70 L170 70 L128 106 L146 166 L100 130 L54 166 L72 106 L30 70 L90 70 Z" fill="%23008080" opacity="0.05"/></svg>'),
-    /* Subtle Om Symbol in Deep Maroon */
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23800000" opacity="0.06" text-anchor="middle">ॐ</text></svg>'),
-    /* Vertical Temple Stripes with Soft Gold */
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="0" width="10" height="100" fill="%23FFD700" opacity="0.04"/><path d="M50 20 Q60 10 70 20 Q80 30 70 40 Q60 50 50 40 Q40 50 30 40 Q20 30 30 20 Z" fill="%23FF9933" opacity="0.05"/></svg>');
-  background-size: 400px 400px, 200px 200px, 100px 100px;
+    /* Subtle Om Symbol in Deep Maroon (Very Low Opacity) */
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23800000" opacity="0.02" text-anchor="middle">ॐ</text></svg>'),
+    /* Vertical Temple Stripes with Soft Gold (Barely Visible) */
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="0" width="10" height="100" fill="%23FFD700" opacity="0.03"/><path d="M50 20 Q60 10 70 20 Q80 30 70 40 Q60 50 50 40 Q40 50 30 40 Q20 30 30 20 Z" fill="%23FF9933" opacity="0.02"/></svg>');
+  background-size: 200px 200px, 100px 100px;
   background-repeat: repeat;
-  background-position: center, top left, bottom right;
-  /* Vibrant but Muted Radial Gradient Accent (Saffron/Teal/Maroon) */
-  background: radial-gradient(circle at 50% 50%, rgba(255, 153, 51, 0.1) 0%, rgba(0, 128, 128, 0.08) 30%, rgba(128, 0, 0, 0.06) 60%, #2C2C2C 100%), 
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23FF9933" stroke-width="0.5" opacity="0.08"/><path d="M100 20 L110 70 L170 70 L128 106 L146 166 L100 130 L54 166 L72 106 L30 70 L90 70 Z" fill="%23008080" opacity="0.05"/></svg>'),
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23800000" opacity="0.06" text-anchor="middle">ॐ</text></svg>'),
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="0" width="10" height="100" fill="%23FFD700" opacity="0.04"/><path d="M50 20 Q60 10 70 20 Q80 30 70 40 Q60 50 50 40 Q40 50 30 40 Q20 30 30 20 Z" fill="%23FF9933" opacity="0.05"/></svg>');
+  background-position: top left, bottom right;
+  /* Muted Radial Gradient with Grounded Dark Accents (Saffron/Teal/Maroon, Very Transparent) */
+  background: radial-gradient(circle at 50% 50%, rgba(255, 153, 51, 0.05) 0%, rgba(0, 128, 128, 0.03) 30%, rgba(128, 0, 0, 0.02) 60%, #1a1a1a 100%), 
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23800000" opacity="0.02" text-anchor="middle">ॐ</text></svg>'),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="0" width="10" height="100" fill="%23FFD700" opacity="0.03"/><path d="M50 20 Q60 10 70 20 Q80 30 70 40 Q60 50 50 40 Q40 50 30 40 Q20 30 30 20 Z" fill="%23FF9933" opacity="0.02"/></svg>');
 }
 
-/* Content Pages: Consistent Dark Base with Subtle Vibrant Texture */
+/* Content Pages: Consistent Dark Base with Minimal Texture */
 .page-bg {
-  background: #2C2C2C; /* Same dark base */
+  background: #1a1a1a; /* Same deeper dark base */
   background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%232C2C2C" stroke-width="0.2" opacity="0.02"/></svg>');
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%231a1a1a" stroke-width="0.2" opacity="0.01"/></svg>');
   background-size: 200px 200px;
-  /* Muted Linear Gradient with Vibrant Accents */
-  background: linear-gradient(135deg, rgba(255, 153, 51, 0.1) 0%, rgba(0, 128, 128, 0.08) 50%, rgba(128, 0, 0, 0.06) 100%), 
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%232C2C2C" stroke-width="0.2" opacity="0.02"/></svg>');
+  /* Subtle Linear Gradient with Grounded Accents */
+  background: linear-gradient(135deg, rgba(255, 153, 51, 0.03) 0%, rgba(0, 128, 128, 0.02) 50%, rgba(128, 0, 0, 0.01) 100%), 
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%231a1a1a" stroke-width="0.2" opacity="0.01"/></svg>');
 }
 
 .glass {
@@ -83,6 +80,6 @@ body {
   box-shadow: 0 0 10px #FF9933;
 }
 
-.primary { color: #2C2C2C; }
+.primary { color: #1a1a1a; }
 .accent { color: #FF9933; }
 .title-font { font-family: 'Noto Sans Devanagari', sans-serif; color: #FFD700; }
