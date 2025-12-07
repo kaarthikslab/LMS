@@ -9,28 +9,30 @@ const IssuedDetails = () => {
 
   return (
     <div className="page-bg" style={{ marginTop: '80px' }}>
-      <div className="glass" style={{ position: 'fixed', top: '80px', right: '20px', padding: '10px', zIndex: 1000 }}>
+      <div className="glass" style={{ padding: '10px', marginBottom: '20px', textAlign: 'center' }}>
         <h3>Total Expenditure: <span className="accent">${totalExpenditure.toFixed(2)}</span></h3>
       </div>
-      <div className="glass" style={{ padding: '20px', overflowY: 'auto', height: '400px', marginTop: '20px' }}>
-        <table style={{ width: '100%', color: 'white' }}>
-          <thead>
-            <tr>
-              <th>Name</th><th>Issued Date</th><th>Due Date</th><th>Returned Date</th><th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {book.issued.map((i, idx) => (
-              <tr key={idx}>
-                <td>{i.name}</td>
-                <td>{i.issuedDate}</td>
-                <td>{i.dueDate}</td>
-                <td>{i.returnedDate || 'N/A'}</td>
-                <td>{i.status}</td>
+      <div style={{ marginTop: '40px' }}>
+        <div className="glass" style={{ padding: '20px', overflowY: 'auto', height: '400px' }}>
+          <table style={{ width: '100%', color: '#333' }}>
+            <thead>
+              <tr>
+                <th>Name</th><th>Issued Date</th><th>Due Date</th><th>Returned Date</th><th>Status</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {book.issued.map((i, idx) => (
+                <tr key={idx}>
+                  <td>{i.name}</td>
+                  <td>{i.issuedDate}</td>
+                  <td>{i.dueDate}</td>
+                  <td>{i.returnedDate || 'N/A'}</td>
+                  <td>{i.status}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
