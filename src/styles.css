@@ -10,15 +10,21 @@ body {
   min-height: 100vh;
 }
 
-/* Homepage: Subtle Hindu Traditional Designs (Complete, Faint) */
+/* Homepage: Subtle Hindu Traditional Designs (Complete, Whole Motifs) */
 .homepage-bg {
   background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23B87333" stroke-width="1" opacity="0.08"/><path d="M100 20 L110 70 L170 70 L128 106 L146 166 L100 130 L54 166 L72 106 L30 70 L90 70 Z" fill="%23B87333" opacity="0.05"/><circle cx="100" cy="100" r="40" fill="none" stroke="%23FFD700" stroke-width="0.5" opacity="0.06"/><path d="M100 60 Q120 40 140 60 Q160 80 140 100 Q120 120 100 100 Q80 120 60 100 Q40 80 60 60 Z" fill="%23DC143C" opacity="0.04"/></svg>');
-  background-size: 400px 400px;
+    /* Complete Mandala with Lotus */
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23B87333" stroke-width="1" opacity="0.08"/><path d="M100 20 L110 70 L170 70 L128 106 L146 166 L100 130 L54 166 L72 106 L30 70 L90 70 Z" fill="%23B87333" opacity="0.05"/><circle cx="100" cy="100" r="40" fill="none" stroke="%23FFD700" stroke-width="0.5" opacity="0.06"/><path d="M100 60 Q120 40 140 60 Q160 80 140 100 Q120 120 100 100 Q80 120 60 100 Q40 80 60 60 Z" fill="%23DC143C" opacity="0.04"/></svg>'),
+    /* Stylized Om Symbol */
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23C87533" opacity="0.05" text-anchor="middle">ॐ</text></svg>'),
+    /* Ornate Geometric Pattern */
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,10 90,90 10,90" fill="none" stroke="%238B0000" stroke-width="0.5" opacity="0.06"/><circle cx="50" cy="50" r="30" fill="none" stroke="%23FFD700" stroke-width="0.3" opacity="0.04"/></svg>');
+  background-size: 400px 400px, 200px 200px, 150px 150px;
   background-repeat: repeat;
+  background-position: center, top left, bottom right;
 }
 
-/* Content Pages: Clean, Minimal Texture */
+/* Content Pages: Clean, Minimal Texture (No Hindu Motifs for Focus) */
 .page-bg {
   background-image: 
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%232C2C2C" stroke-width="0.2" opacity="0.02"/></svg>');
@@ -33,7 +39,7 @@ body {
 }
 
 .neu-button {
-  background: rgba(255, 153, 51, 0.8);
+  background: rgba(255, 153, 51, 0.8); /* Saffron Accent */
   border: none;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.1);
@@ -43,7 +49,7 @@ body {
 
 .neu-button:hover {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
-  background: rgba(255, 153, 51, 1);
+  background: #FF9933; /* Vibrant Saffron */
 }
 
 .grid {
@@ -65,9 +71,9 @@ body {
 
 .square-tile:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 10px #FF9933;
+  box-shadow: 0 0 10px #FF9933; /* Saffron Glow */
 }
 
 .primary { color: #2C2C2C; }
-.accent { color: #FF9933; }
-.title-font { font-family: 'Noto Sans Devanagari', sans-serif; color: #FFD700; }
+.accent { color: #FF9933; } /* Saffron */
+.title-font { font-family: 'Noto Sans Devanagari', sans-serif; color: #FFD700; } /* Gold */
