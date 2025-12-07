@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { mockBooks } from '../data/mockData';
+import { mockBooks } from '../data/mockdata';
 
 const BookDetails = () => {
   const { id } = useParams();
