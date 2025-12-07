@@ -1,13 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { mockBooks } from '../data/mockdata';
+import { mockBooks } from '../data/mockData';
 
 const RestockedDetails = () => {
   const { id } = useParams();
   const book = mockBooks.find(b => b.id === parseInt(id));
 
   return (
-    <div className="glass" style={{ padding: '20px' }}>
+    <div className="glass" style={{ padding: '20px', marginTop: '100px' }}> {/* 5-line gap below header */}
       <h2>Restock Logs for {book.name}</h2>
       {book.restocked.map((log, idx) => (
         <div key={idx} className="glass" style={{ margin: '10px 0', padding: '10px' }}>
