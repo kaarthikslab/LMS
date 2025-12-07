@@ -9,5 +9,4 @@ const IssuedDetails = () => {
 
   return (
     <div className="page-bg" style={{ marginTop: '80px' }}>
-      <div className="glass" style={{ position: 'fixed', top: '80px', right: '20px', padding: '10px', zIndex: 1000 }}>
-        <h3>Total
+      <div className="glass" style
