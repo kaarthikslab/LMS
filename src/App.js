@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Navigation from './components/Navigation';
 import Dashboard from './pages/Dashboard';
 import LiveSection from './pages/LiveSection';
 import IssuedSection from './pages/IssuedSection';
@@ -14,10 +13,9 @@ import './styles.css';
 function App() {
   return (
     <Router>
-      <div style={{ display: 'flex' }}>
-        <Navigation />
-        <div style={{ flex: 1, padding: '20px' }}>
-          <Header />
+      <div>
+        <Header />
+        <div style={{ padding: '20px' }}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/live" element={<LiveSection />} />
