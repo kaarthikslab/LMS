@@ -17,3 +17,23 @@ const IssuedDetails = () => {
           <thead>
             <tr>
               <th>Name</th><th>Issued Date</th><th>Due Date</th><th>Returned Date</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {book.issued.map((i, idx) => (
+              <tr key={idx}>
+                <td>{i.name}</td>
+                <td>{i.issuedDate}</td>
+                <td>{i.dueDate}</td>
+                <td>{i.returnedDate || 'N/A'}</td>
+                <td>{i.status}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default IssuedDetails;
