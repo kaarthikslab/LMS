@@ -9,4 +9,11 @@ const IssuedDetails = () => {
 
   return (
     <div className="page-bg" style={{ marginTop: '80px' }}>
-      <div className="glass" style
+      <div className="glass" style={{ position: 'fixed', top: '80px', right: '20px', padding: '10px', zIndex: 1000 }}>
+        <h3>Total Expenditure: <span className="accent">${totalExpenditure.toFixed(2)}</span></h3>
+      </div>
+      <div className="glass" style={{ padding: '20px', overflowY: 'auto', height: '400px', marginTop: '20px' }}>
+        <table style={{ width: '100%', color: 'white' }}>
+          <thead>
+            <tr>
+              <th>Name</th><th>Issued Date</th><th>Due Date</th><th>Returned Date</th><th>Status</th>
