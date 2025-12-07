@@ -1,8 +1,27 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
   color: white;
+}
+
+/* Homepage Background: Modern Hindu Synthesis */
+.homepage-bg {
+  background: linear-gradient(135deg, #001122 0%, #2a1b3d 50%, #ff9933 100%);
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(255, 153, 51, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(220, 20, 60, 0.1) 0%, transparent 50%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23FFD700" stroke-width="1" opacity="0.1"/><path d="M50 10 L60 40 L90 40 L68 58 L78 88 L50 70 L22 88 L32 58 L10 40 L40 40 Z" fill="%23FFD700" opacity="0.05"/></svg>');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Other Pages Background: Subdued Version */
+.page-bg {
+  background: linear-gradient(135deg, #001122 0%, #1a1a2e 100%);
+  background-image: 
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="none" stroke="%23FF9933" stroke-width="0.5" opacity="0.05"/><path d="M50 5 L55 35 L85 35 L63 53 L73 83 L50 65 L27 83 L37 53 L15 35 L45 35 Z" fill="%23FF9933" opacity="0.02"/></svg>');
+  background-size: 200px 200px;
+  min-height: 100vh;
 }
 
 .glass {
@@ -13,15 +32,17 @@ body {
 }
 
 .neu-button {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 153, 51, 0.8);
   border: none;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+  color: white;
 }
 
 .neu-button:hover {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+  background: rgba(255, 153, 51, 1);
 }
 
 .grid {
@@ -43,8 +64,9 @@ body {
 
 .square-tile:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 10px #00FF7F;
+  box-shadow: 0 0 10px #FF9933;
 }
 
-.primary { color: #00BFFF; }
-.accent { color: #00FF7F; }
+.primary { color: #001122; }
+.accent { color: #FF9933; }
+.title-font { font-family: 'Noto Sans Devanagari', sans-serif; color: #FFD700; }
