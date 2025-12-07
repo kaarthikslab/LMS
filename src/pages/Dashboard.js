@@ -5,7 +5,6 @@ const Dashboard = () => (
   <div>
     <KPICards />
     <div className="glass" style={{ height: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      {/* Placeholder for 3 images */}
       <div>Image 1</div>
       <div>Image 2</div>
       <div>Image 3</div>
@@ -13,4 +12,4 @@ const Dashboard = () => (
   </div>
 );
 
-export default Dashboard;
+export default Dashboard
