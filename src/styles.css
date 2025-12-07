@@ -4,24 +4,25 @@ body {
   color: white;
 }
 
-/* Homepage Background: Modern Hindu Synthesis */
-.homepage-bg {
-  background: linear-gradient(135deg, #001122 0%, #2a1b3d 50%, #ff9933 100%);
-  background-image: 
-    radial-gradient(circle at 20% 80%, rgba(255, 153, 51, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(220, 20, 60, 0.1) 0%, transparent 50%),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23FFD700" stroke-width="1" opacity="0.1"/><path d="M50 10 L60 40 L90 40 L68 58 L78 88 L50 70 L22 88 L32 58 L10 40 L40 40 Z" fill="%23FFD700" opacity="0.05"/></svg>');
-  background-size: cover;
+/* Uniform Dark Background for All Pages */
+.homepage-bg, .page-bg {
+  background: #2C2C2C; /* Deep Charcoal Gray - Moderate Dark, Uniform */
   min-height: 100vh;
 }
 
-/* Other Pages Background: Subdued Version */
-.page-bg {
-  background: linear-gradient(135deg, #001122 0%, #1a1a2e 100%);
+/* Homepage: Subdued Hindu Motifs (Complete, Faint) */
+.homepage-bg {
   background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="none" stroke="%23FF9933" stroke-width="0.5" opacity="0.05"/><path d="M50 5 L55 35 L85 35 L63 53 L73 83 L50 65 L27 83 L37 53 L15 35 L45 35 Z" fill="%23FF9933" opacity="0.02"/></svg>');
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="none" stroke="%23B87333" stroke-width="0.5" opacity="0.1"/><path d="M50 5 L55 35 L85 35 L63 53 L73 83 L50 65 L27 83 L37 53 L15 35 L45 35 Z" fill="%23B87333" opacity="0.05"/><circle cx="50" cy="50" r="20" fill="none" stroke="%23FFD700" stroke-width="0.3" opacity="0.08"/></svg>');
+  background-size: 300px 300px;
+  background-repeat: repeat;
+}
+
+/* Content Pages: Clean, Minimal Texture */
+.page-bg {
+  background-image: 
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%232C2C2C" stroke-width="0.2" opacity="0.02"/></svg>');
   background-size: 200px 200px;
-  min-height: 100vh;
 }
 
 .glass {
@@ -67,6 +68,6 @@ body {
   box-shadow: 0 0 10px #FF9933;
 }
 
-.primary { color: #001122; }
+.primary { color: #2C2C2C; }
 .accent { color: #FF9933; }
 .title-font { font-family: 'Noto Sans Devanagari', sans-serif; color: #FFD700; }
