@@ -2,14 +2,20 @@ import React from 'react';
 import KPICards from '../components/KPICards';
 
 const Dashboard = () => (
-  <div>
+  <div style={{ marginTop: '100px' }}> {/* Offset for fixed header */}
     <KPICards />
-    <div className="glass" style={{ height: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      <div>Image 1</div>
-      <div>Image 2</div>
-      <div>Image 3</div>
+    <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', margin: '20px 0' }}>
+      <div className="glass square-tile" style={{ width: '150px', height: '150px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        Image 1 Placeholder
+      </div>
+      <div className="glass square-tile" style={{ width: '150px', height: '150px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        Image 2 Placeholder
+      </div>
+      <div className="glass square-tile" style={{ width: '150px', height: '150px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        Image 3 Placeholder
+      </div>
     </div>
   </div>
 );
 
-export default Dashboard
+export default Dashboard;
