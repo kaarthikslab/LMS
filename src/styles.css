@@ -1,49 +1,49 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  color: #333; /* Darker text for legibility on light background */
+  color: white; /* White text for contrast on dark background */
 }
 
-/* Uniform Light, Warm Base for All Pages */
+/* Uniform Dark, Vibrant Base for All Pages */
 .homepage-bg, .page-bg {
-  background: #F5F5DC; /* Muted Beige/Cream - Very light, soft, warm base for legibility */
+  background: #2C2C2C; /* Deep Charcoal Gray - Moderate Dark, Uniform for legibility */
   min-height: 100vh;
 }
 
-/* Homepage: Subtle Hindu Traditional Patterns (Complete, Faint) */
+/* Homepage: Subtle Hindu Traditional Patterns with Vibrant Accents (Complete, Faint) */
 .homepage-bg {
   background-image: 
-    /* Faint Mandala (Complete Circle) */
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23DAA520" stroke-width="0.5" opacity="0.03"/><path d="M100 20 L110 70 L170 70 L128 106 L146 166 L100 130 L54 166 L72 106 L30 70 L90 70 Z" fill="%23DAA520" opacity="0.02"/></svg>'),
-    /* Subtle Om Symbol */
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23008080" opacity="0.03" text-anchor="middle">ॐ</text></svg>'),
-    /* Vertical Temple Stripes/Paisley */
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="0" width="10" height="100" fill="%23800000" opacity="0.02"/><path d="M50 20 Q60 10 70 20 Q80 30 70 40 Q60 50 50 40 Q40 50 30 40 Q20 30 30 20 Z" fill="%23FF9933" opacity="0.02"/></svg>');
+    /* Faint Mandala with Vibrant Saffron/Teal */
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23FF9933" stroke-width="0.5" opacity="0.08"/><path d="M100 20 L110 70 L170 70 L128 106 L146 166 L100 130 L54 166 L72 106 L30 70 L90 70 Z" fill="%23008080" opacity="0.05"/></svg>'),
+    /* Subtle Om Symbol in Deep Maroon */
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23800000" opacity="0.06" text-anchor="middle">ॐ</text></svg>'),
+    /* Vertical Temple Stripes with Soft Gold */
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="0" width="10" height="100" fill="%23FFD700" opacity="0.04"/><path d="M50 20 Q60 10 70 20 Q80 30 70 40 Q60 50 50 40 Q40 50 30 40 Q20 30 30 20 Z" fill="%23FF9933" opacity="0.05"/></svg>');
   background-size: 400px 400px, 200px 200px, 100px 100px;
   background-repeat: repeat;
   background-position: center, top left, bottom right;
-  /* Muted Radial Gradient Accent (95% Transparent Soft Gold/Teal) */
-  background: radial-gradient(circle at 50% 50%, rgba(218, 165, 32, 0.05) 0%, rgba(0, 128, 128, 0.03) 50%, rgba(245, 245, 220, 1) 100%), 
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23DAA520" stroke-width="0.5" opacity="0.03"/><path d="M100 20 L110 70 L170 70 L128 106 L146 166 L100 130 L54 166 L72 106 L30 70 L90 70 Z" fill="%23DAA520" opacity="0.02"/></svg>'),
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23008080" opacity="0.03" text-anchor="middle">ॐ</text></svg>'),
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="0" width="10" height="100" fill="%23800000" opacity="0.02"/><path d="M50 20 Q60 10 70 20 Q80 30 70 40 Q60 50 50 40 Q40 50 30 40 Q20 30 30 20 Z" fill="%23FF9933" opacity="0.02"/></svg>');
+  /* Vibrant but Muted Radial Gradient Accent (Saffron/Teal/Maroon) */
+  background: radial-gradient(circle at 50% 50%, rgba(255, 153, 51, 0.1) 0%, rgba(0, 128, 128, 0.08) 30%, rgba(128, 0, 0, 0.06) 60%, #2C2C2C 100%), 
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23FF9933" stroke-width="0.5" opacity="0.08"/><path d="M100 20 L110 70 L170 70 L128 106 L146 166 L100 130 L54 166 L72 106 L30 70 L90 70 Z" fill="%23008080" opacity="0.05"/></svg>'),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23800000" opacity="0.06" text-anchor="middle">ॐ</text></svg>'),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="0" width="10" height="100" fill="%23FFD700" opacity="0.04"/><path d="M50 20 Q60 10 70 20 Q80 30 70 40 Q60 50 50 40 Q40 50 30 40 Q20 30 30 20 Z" fill="%23FF9933" opacity="0.05"/></svg>');
 }
 
-/* Content Pages: Consistent Subtle Texture */
+/* Content Pages: Consistent Dark Base with Subtle Vibrant Texture */
 .page-bg {
-  background: #F5F5DC; /* Same light base */
+  background: #2C2C2C; /* Same dark base */
   background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%23F5F5DC" stroke-width="0.2" opacity="0.01"/></svg>');
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%232C2C2C" stroke-width="0.2" opacity="0.02"/></svg>');
   background-size: 200px 200px;
-  /* Muted Linear Gradient Accent */
-  background: linear-gradient(135deg, rgba(218, 165, 32, 0.05) 0%, rgba(0, 128, 128, 0.03) 50%, rgba(245, 245, 220, 1) 100%), 
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%23F5F5DC" stroke-width="0.2" opacity="0.01"/></svg>');
+  /* Muted Linear Gradient with Vibrant Accents */
+  background: linear-gradient(135deg, rgba(255, 153, 51, 0.1) 0%, rgba(0, 128, 128, 0.08) 50%, rgba(128, 0, 0, 0.06) 100%), 
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%232C2C2C" stroke-width="0.2" opacity="0.02"/></svg>');
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.9); /* Adjusted for light background */
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
 
@@ -83,6 +83,6 @@ body {
   box-shadow: 0 0 10px #FF9933;
 }
 
-.primary { color: #F5F5DC; }
+.primary { color: #2C2C2C; }
 .accent { color: #FF9933; }
-.title-font { font-family: 'Noto Sans Devanagari', sans-serif; color: #DAA520; }
+.title-font { font-family: 'Noto Sans Devanagari', sans-serif; color: #FFD700; }
