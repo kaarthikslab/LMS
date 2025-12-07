@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { mockBooks } from '../data/mockdata';
+import { mockBooks } from '../data/mockData';
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -8,7 +8,7 @@ const BookDetails = () => {
   const [status, setStatus] = useState(book.status);
 
   return (
-    <div className="glass" style={{ padding: '20px' }}>
+    <div className="glass" style={{ padding: '20px', marginTop: '100px' }}> {/* 5-line gap below header */}
       <h2>{book.name}</h2>
       <p>Price: <span className="accent">${book.price}</span></p>
       <p>Stock: {book.stock}</p>
