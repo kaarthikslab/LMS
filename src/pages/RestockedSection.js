@@ -1,24 +1,14 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import BookTile from '../components/BookTile';
 import { mockBooks } from '../data/mockdata';
 
-const RestockedDetails = () => {
-  const { id } = useParams();
-  const book = mockBooks.find(b => b.id === parseInt(id));
-
-  return (
-    <div className="glass" style={{ padding: '20px' }}>
-      <h2>Restock Logs for {book.name}</h2>
-      {book.restocked.map((log, idx) => (
-        <div key={idx} className="glass" style={{ margin: '10px 0', padding: '10px' }}>
-          <p><strong>{log.date}</strong></p>
-          <p>Quantity: <span className="accent">{log.quantity}</span></p>
-          <p>Unit Price: ${log.unitPrice}</p>
-          <p>Supplier: {log.supplier}</p>
-        </div>
-      ))}
+const RestockedSection = () => (
+  <div style={{ marginTop: '100px' }}>
+    <h2 className="primary">Restocked Books</h2>
+    <div className="grid">
+      {mockBooks.filter(b => b.restocked.length > 0).map(book => <BookTile key={book.id} book={book} type="restocked" />)}
     </div>
-  );
-};
+  </div>
+);
 
-export default RestockedDetails;
+export default RestockedSection;
