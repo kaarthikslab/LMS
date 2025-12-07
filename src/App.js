@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Navigation from './components/Navigation';
 import Dashboard from './pages/Dashboard';
 import LiveSection from './pages/LiveSection';
 import IssuedSection from './pages/IssuedSection';
@@ -15,9 +14,8 @@ function App() {
   return (
     <Router>
       <div className="homepage-bg">
-        <Navigation />
         <Header />
-        <div style={{ marginLeft: '220px', padding: '20px' }}>
+        <div style={{ padding: '20px' }}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/live" element={<LiveSection />} />
