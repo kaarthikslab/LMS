@@ -1,29 +1,16 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  color: #E8E8E8; /* Softer white-gray text to reduce dominance */
+  color: #E8E8E8; /* Soft gray-white text for readability */
 }
 
-/* Uniform Dark, Grounded Base with Subtle Tint for All Pages (Terracotta & Rust Theme) */
+/* Uniform Dark, Grounded Base for All Pages (Terracotta & Rust Theme - No Tints or Shades) */
 .homepage-bg, .page-bg {
-  background: #4E342E; /* Muted Rust Brown - Dark, grounded base */
+  background: #4E342E; /* Muted Rust Brown - Pure dark base without any tints */
   min-height: 100vh;
-  /* Subtle Neutral Tint Overlay for Balance (Very Light, Non-Dominant) */
-  position: relative;
 }
 
-.homepage-bg::before, .page-bg::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(78, 52, 46, 0.05); /* Very faint rust tint for softening */
-  pointer-events: none;
-}
-
-/* Homepage: Ultra-Subtle Patterns with Light Peach Accents (Extremely Faint) */
+/* Homepage: Ultra-Subtle Patterns with Light Peach Accents (Extremely Faint, No Tints) */
 .homepage-bg {
   background-image: 
     /* Subtle Om Symbol in Light Peach (Barely Visible) */
@@ -33,25 +20,25 @@ body {
   background-size: 200px 200px, 100px 100px;
   background-repeat: repeat;
   background-position: top left, bottom right;
-  /* Muted Radial Gradient with Subtle Light Peach (Very Transparent) */
+  /* Muted Radial Gradient with Subtle Light Peach (Very Transparent, No Dominant Tints) */
   background: radial-gradient(circle at 50% 50%, rgba(255, 204, 188, 0.03) 0%, rgba(78, 52, 46, 1) 100%), 
               url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" font-size="40" fill="%23FFCCBC" opacity="0.02" text-anchor="middle">ॐ</text></svg>'),
               url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="45" y="0" width="10" height="100" fill="%23FFCCBC" opacity="0.01"/><path d="M50 20 Q60 10 70 20 Q80 30 70 40 Q60 50 50 40 Q40 50 30 40 Q20 30 30 20 Z" fill="%23FFCCBC" opacity="0.02"/></svg>');
 }
 
-/* Content Pages: Consistent Dark Base with Minimal Texture */
+/* Content Pages: Consistent Dark Base with Minimal Texture (No Tints) */
 .page-bg {
-  background: #4E342E; /* Same dark rust base */
+  background: #4E342E; /* Same pure dark rust base */
   background-image: 
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%234E342E" stroke-width="0.2" opacity="0.01"/></svg>');
   background-size: 200px 200px;
-  /* Subtle Linear Gradient with Faint Light Peach */
+  /* Subtle Linear Gradient with Faint Light Peach (No Dominant Tints) */
   background: linear-gradient(135deg, rgba(255, 204, 188, 0.02) 0%, rgba(78, 52, 46, 1) 100%), 
               url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="none" stroke="%234E342E" stroke-width="0.2" opacity="0.01"/></svg>');
 }
 
 .glass {
-  background: rgba(78, 52, 46, 0.15); /* Tinted rust instead of pure white for less dominance */
+  background: rgba(255, 255, 255, 0.1); /* Neutral glassy background, no tint */
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -63,7 +50,7 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  color: #E8E8E8; /* Softer text color */
+  color: #E8E8E8;
 }
 
 .neu-button:hover {
