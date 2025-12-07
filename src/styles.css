@@ -10,11 +10,11 @@ body {
   min-height: 100vh;
 }
 
-/* Homepage: Subdued Hindu Motifs (Complete, Faint) */
+/* Homepage: Subtle Hindu Traditional Designs (Complete, Faint) */
 .homepage-bg {
   background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="none" stroke="%23B87333" stroke-width="0.5" opacity="0.1"/><path d="M50 5 L55 35 L85 35 L63 53 L73 83 L50 65 L27 83 L37 53 L15 35 L45 35 Z" fill="%23B87333" opacity="0.05"/><circle cx="50" cy="50" r="20" fill="none" stroke="%23FFD700" stroke-width="0.3" opacity="0.08"/></svg>');
-  background-size: 300px 300px;
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23B87333" stroke-width="1" opacity="0.08"/><path d="M100 20 L110 70 L170 70 L128 106 L146 166 L100 130 L54 166 L72 106 L30 70 L90 70 Z" fill="%23B87333" opacity="0.05"/><circle cx="100" cy="100" r="40" fill="none" stroke="%23FFD700" stroke-width="0.5" opacity="0.06"/><path d="M100 60 Q120 40 140 60 Q160 80 140 100 Q120 120 100 100 Q80 120 60 100 Q40 80 60 60 Z" fill="%23DC143C" opacity="0.04"/></svg>');
+  background-size: 400px 400px;
   background-repeat: repeat;
 }
 
