@@ -8,7 +8,7 @@ const BookDetails = () => {
   const [status, setStatus] = useState(book.status);
 
   return (
-    <div className="glass" style={{ padding: '20px', marginTop: '100px' }}> {/* 5-line gap below header */}
+    <div className="page-bg glass" style={{ padding: '20px', marginTop: '80px', maxWidth: '600px', margin: '80px auto' }}>
       <h2>{book.name}</h2>
       <p>Price: <span className="accent">${book.price}</span></p>
       <p>Stock: {book.stock}</p>
