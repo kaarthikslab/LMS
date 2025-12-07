@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { mockBooks } from '../data/mockdata';
+import { mockBooks } from '../data/mockData';
 
 const IssuedDetails = () => {
   const { id } = useParams();
@@ -8,8 +8,8 @@ const IssuedDetails = () => {
   const totalExpenditure = book.issued.reduce((sum, i) => sum + (book.price * (new Date(i.returnedDate || new Date()) - new Date(i.issuedDate)) / (1000 * 60 * 60 * 24)), 0);
 
   return (
-    <div>
-      <div className="glass" style={{ position: 'absolute', top: '20px', right: '20px', padding: '10px' }}>
+    <div style={{ marginTop: '100px' }}> {/* 5-line gap below header */}
+      <div className="glass" style={{ position: 'absolute', top: '80px', right: '20px', padding: '10px' }}>
         <h3>Total Expenditure: <span className="accent">${totalExpenditure.toFixed(2)}</span></h3>
       </div>
       <div className="glass" style={{ padding: '20px', overflowY: 'auto', height: '400px' }}>
